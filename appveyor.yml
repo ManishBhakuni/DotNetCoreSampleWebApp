@@ -1,2 +1,6 @@
+install:
+  - cmd: >-
+    dotnet restore		
+
 # build Configuration, i.e. Debug, Release, etc.
 configuration: Release
