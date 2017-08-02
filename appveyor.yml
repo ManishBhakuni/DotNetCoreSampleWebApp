@@ -20,8 +20,8 @@ after_build:
  # for once the build has completed
 artifacts:
   - path: '\WebAPI\bin\Debug\netcoreapp1.1\publish'
-  name: Website
-  type: WebDeployPackage
+    name: Website
+    type: WebDeployPackage
 clone_depth: 1
 test_script:
   #restore packages for our unit tests
