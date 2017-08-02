@@ -13,3 +13,24 @@ before_build:
   - cmd: dotnet --version
   # Display minimal restore text
   - cmd : dotnet restore ./WebAPI/WebAPI.csproj --verbosity m
+build_script:
+  # output will be in ./WebAPI/bin/debug/netcoreapp1.1/publish
+  - cmd: dotnet publish ./WebAPI/WebAPI.csproj  
+after_build:
+ # for once the build has completed
+artifacts:
+  - path: '\WebAPI\bin\Debug\netcoreapp1.1\publish'
+  name: Website
+  type: WebDeployPackage
+clone_depth: 1
+test_script:
+  #restore packages for our unit tests
+  - cmd: dotnet restore ./WebAPITests/WebAPITests.csproj --verbosity m
+  # run the unit tests (requires changing into the test directory)
+  - cmd: cd WebAPITests
+  - cmd: dotnet xunit
+on_finish:
+  # any cleanup in here
+deploy: off
+  
+  
