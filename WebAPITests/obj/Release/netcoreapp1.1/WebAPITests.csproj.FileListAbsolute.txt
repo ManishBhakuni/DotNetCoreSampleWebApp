@@ -1,0 +1,14 @@
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPITests.deps.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPITests.runtimeconfig.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPITests.runtimeconfig.dev.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPITests.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPITests.pdb
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPI.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\bin\Release\netcoreapp1.1\WebAPI.pdb
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\obj\Release\netcoreapp1.1\WebAPITests.csprojResolveAssemblyReference.cache
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\obj\Release\netcoreapp1.1\WebAPITests.AssemblyInfo.cs
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\obj\Release\netcoreapp1.1\WebAPITests.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPITests\obj\Release\netcoreapp1.1\WebAPITests.pdb

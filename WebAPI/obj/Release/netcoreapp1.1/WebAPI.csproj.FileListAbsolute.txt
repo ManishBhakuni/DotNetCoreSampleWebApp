@@ -1,0 +1,9 @@
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\bin\Release\netcoreapp1.1\WebAPI.deps.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\bin\Release\netcoreapp1.1\WebAPI.runtimeconfig.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\bin\Release\netcoreapp1.1\WebAPI.runtimeconfig.dev.json
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\bin\Release\netcoreapp1.1\WebAPI.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\bin\Release\netcoreapp1.1\WebAPI.pdb
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\obj\Release\netcoreapp1.1\WebAPI.csprojResolveAssemblyReference.cache
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\obj\Release\netcoreapp1.1\WebAPI.AssemblyInfo.cs
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\obj\Release\netcoreapp1.1\WebAPI.dll
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\WebAPI\obj\Release\netcoreapp1.1\WebAPI.pdb
