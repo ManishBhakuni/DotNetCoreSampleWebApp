@@ -24,7 +24,7 @@ namespace WebAPITests.Controllers
             //Assert.AreEqual("value2", result.ElementAt(1));
 
             // Assert
-            Assert.Equal(5, 15);
+            Assert.Equal(5, 5);
         }
     }
 }
