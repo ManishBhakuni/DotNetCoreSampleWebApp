@@ -28,8 +28,8 @@ artifacts:
 clone_depth: 1
 test_script:  
 - ps: >-
-    dotnet restore --verbosity m;
-    nuget restore --verbosity m;
+    dotnet restore;
+    nuget restore;
     dotnet restore --packages .\packages;
     nuget restore -PackagesDirectory .\packages;
     dotnet publish .\WebAPITests -o ..\build_tests --framework netcoreapp1.1;
