@@ -2,6 +2,9 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
+      "coveralls.net/0.7.0": {
+        "type": "package"
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -1836,6 +1839,9 @@
         "runtime": {
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "OpenCover/4.6.519": {
+        "type": "package"
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.1": {
         "type": "package",
@@ -4106,6 +4112,23 @@
     }
   },
   "libraries": {
+    "coveralls.net/0.7.0": {
+      "sha512": "9cP8EbxrFileX6Yu7rPaLbq8oiOsPE422dunmPWVJuo01d7KqTgjoSFlA9l01+FMxA/X/1BnUxqUYU1a3y/bvA==",
+      "type": "package",
+      "path": "coveralls.net/0.7.0",
+      "files": [
+        "coveralls.net.0.7.0.nupkg.sha512",
+        "coveralls.net.nuspec",
+        "tools/BCLExtensions.dll",
+        "tools/Beefeater.dll",
+        "tools/DocoptNet.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/System.Net.Http.Extensions.dll",
+        "tools/System.Net.Http.Primitives.dll",
+        "tools/csmacnz.Coveralls.exe",
+        "tools/csmacnz.Coveralls.exe.config"
+      ]
+    },
     "Libuv/1.9.1": {
       "sha512": "uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
       "type": "package",
@@ -5560,6 +5583,57 @@
         "newtonsoft.json.9.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "OpenCover/4.6.519": {
+      "sha512": "oReudTijK4ghbd1GNTzl7Su2KzOufj2evTS5PTGAGC5ThfrThcInB/t9w2ISkcEacOsgLQTdG+PO0UUUGZ+zTw==",
+      "type": "package",
+      "path": "opencover/4.6.519",
+      "files": [
+        "License.rtf",
+        "MSBuild/OpenCover.MSBuild.dll",
+        "MSBuild/OpenCover.targets",
+        "SampleSln/.nuget/packages.config",
+        "SampleSln/Bom/Bom.csproj",
+        "SampleSln/Bom/BomManager.cs",
+        "SampleSln/Bom/Properties/AssemblyInfo.cs",
+        "SampleSln/BomSample.sln",
+        "SampleSln/BomTest/BomManagerTests.cs",
+        "SampleSln/BomTest/BomTest.csproj",
+        "SampleSln/BomTest/Properties/AssemblyInfo.cs",
+        "SampleSln/BomTest/packages.config",
+        "SampleSln/coverage.bat",
+        "SampleSln/packages/repositories.config",
+        "Samples/x64/OpenCover.Simple.Target.exe",
+        "Samples/x64/OpenCover.Simple.Target.pdb",
+        "Samples/x86/OpenCover.Simple.Target.exe",
+        "Samples/x86/OpenCover.Simple.Target.pdb",
+        "docs/ReleaseNotes.txt",
+        "docs/Usage.rtf",
+        "opencover.4.6.519.nupkg.sha512",
+        "opencover.nuspec",
+        "readme.txt",
+        "tools/Autofac.Configuration.dll",
+        "tools/Autofac.dll",
+        "tools/CrashReporter.NET.dll",
+        "tools/Gendarme.Framework.dll",
+        "tools/Gendarme.Rules.Maintainability.dll",
+        "tools/Mono.Cecil.Mdb.dll",
+        "tools/Mono.Cecil.Pdb.dll",
+        "tools/Mono.Cecil.dll",
+        "tools/OpenCover.Console.exe",
+        "tools/OpenCover.Console.exe.config",
+        "tools/OpenCover.Console.pdb",
+        "tools/OpenCover.Extensions.dll",
+        "tools/OpenCover.Extensions.pdb",
+        "tools/OpenCover.Framework.dll",
+        "tools/OpenCover.Framework.pdb",
+        "tools/log4net.config",
+        "tools/log4net.dll",
+        "tools/x64/OpenCover.Profiler.dll",
+        "tools/x86/OpenCover.Profiler.dll",
+        "transform/simple_report.xslt",
+        "transform/transform.ps1"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.1": {
@@ -10712,7 +10786,9 @@
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NET.Test.Sdk >= 15.0.0",
       "Microsoft.NETCore.App >= 1.1.2",
+      "OpenCover >= 4.6.519",
       "WebAPI >= 1.0.0",
+      "coveralls.net >= 0.7.0",
       "xunit >= 2.2.0",
       "xunit.runner.visualstudio >= 2.2.0"
     ]
@@ -10757,9 +10833,17 @@
             "target": "Package",
             "version": "2.2.0"
           },
+          "coveralls.net": {
+            "target": "Package",
+            "version": "0.7.0"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "15.0.0"
+          },
+          "OpenCover": {
+            "target": "Package",
+            "version": "4.6.519"
           }
         }
       }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "e918b95562e0e603703d6aaaa4dcc9e0121bbace"
+    "signature": "665b4ae04ed15c64396a46679dd2735e1e2565d0"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,9 @@
       "webapitests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.0.0",
+          "OpenCover": "4.6.519",
           "WebAPI": "1.0.0",
+          "coveralls.net": "0.7.0",
           "xunit": "2.2.0",
           "xunit.runner.visualstudio": "2.2.0"
         },
@@ -17,6 +19,7 @@
           "WebAPITests.dll": {}
         }
       },
+      "coveralls.net/0.7.0": {},
       "microsoft.applicationinsights/2.2.0": {
         "runtime": {
           "lib/netstandard1.5/Microsoft.ApplicationInsights.dll": {}
@@ -941,6 +944,7 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "opencover/4.6.519": {},
       "system.collections.nongeneric/4.3.0": {
         "runtime": {
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
@@ -1114,6 +1118,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "coveralls.net/0.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9cP8EbxrFileX6Yu7rPaLbq8oiOsPE422dunmPWVJuo01d7KqTgjoSFlA9l01+FMxA/X/1BnUxqUYU1a3y/bvA==",
+      "path": "coveralls.net/0.7.0",
+      "hashPath": "coveralls.net.0.7.0.nupkg.sha512"
     },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",
@@ -1653,6 +1664,13 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+    },
+    "opencover/4.6.519": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oReudTijK4ghbd1GNTzl7Su2KzOufj2evTS5PTGAGC5ThfrThcInB/t9w2ISkcEacOsgLQTdG+PO0UUUGZ+zTw==",
+      "path": "opencover/4.6.519",
+      "hashPath": "opencover.4.6.519.nupkg.sha512"
     },
     "system.collections.nongeneric/4.3.0": {
       "type": "package",
