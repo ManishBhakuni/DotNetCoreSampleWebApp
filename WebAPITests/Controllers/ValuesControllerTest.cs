@@ -24,6 +24,10 @@ namespace WebAPITests.Controllers
             //Assert.AreEqual("value2", result.ElementAt(1));
 
             // Assert
+
+            ValuesController objValuesController = new ValuesController();
+            
+
             Assert.Equal(10, 10);
         }
     }
