@@ -28,8 +28,15 @@ artifacts:
 clone_depth: 1
 test_script:  
 - ps: >-
-    ./CoverageReport.ps1;    
-    .\packages\coveralls.net\0.7.0\tools\csmacnz.Coveralls.exe  --opencover -i .\_CodeCoverageResult.xml --useRelativePaths`
+    dotnet restore --verbosity m;
+    nuget restore --verbosity m;
+    dotnet restore --packages .\packages --verbosity m;
+    nuget restore -PackagesDirectory .\packages --verbosity m;
+    dotnet publish .\WebAPITests -o ..\build_tests --framework netcoreapp1.1;
+    ls;
+    .\packages\opencover\4.6.519\tools\OpenCover.Console.exe -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:"vstest WebAPITests.dll" -targetdir:"build_tests" -oldStyle -register:user -output:"_CodeCoverageResult.xml" -filter:"+[WebAPI]*";
+    .\packages\ReportGenerator\2.5.10\tools\ReportGenerator.exe "-reports:_CodeCoverageResult.xml" "-targetdir:_CodeCoverageReport";    
+    .\packages\coveralls.net\0.7.0\tools\csmacnz.Coveralls.exe  --opencover -i .\_CodeCoverageResult.xml --useRelativePaths;
 on_finish:
   # any cleanup in here
 deploy: off
