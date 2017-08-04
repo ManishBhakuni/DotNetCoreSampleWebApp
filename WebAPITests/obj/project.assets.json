@@ -1843,6 +1843,9 @@
       "OpenCover/4.6.519": {
         "type": "package"
       },
+      "ReportGenerator/2.5.10": {
+        "type": "package"
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.1": {
         "type": "package",
         "runtimeTargets": {
@@ -5637,6 +5640,24 @@
         "tools/x86/OpenCover.Profiler.dll",
         "transform/simple_report.xslt",
         "transform/transform.ps1"
+      ]
+    },
+    "ReportGenerator/2.5.10": {
+      "sha512": "vyZp+g10y4MPndQKC7QoPUUif9alUX/yIwXr+oT41iiQcgUKqLeVhJfn/FdMqRpYwb2J0sogof9qtUTdy0sgCw==",
+      "type": "package",
+      "path": "reportgenerator/2.5.10",
+      "files": [
+        "LICENSE.txt",
+        "Readme.txt",
+        "reportgenerator.2.5.10.nupkg.sha512",
+        "reportgenerator.nuspec",
+        "tools/ICSharpCode.NRefactory.CSharp.dll",
+        "tools/ICSharpCode.NRefactory.dll",
+        "tools/ReportGenerator.Reporting.XML",
+        "tools/ReportGenerator.Reporting.dll",
+        "tools/ReportGenerator.XML",
+        "tools/ReportGenerator.exe",
+        "tools/ReportGenerator.exe.config"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.1": {
@@ -10809,6 +10830,7 @@
       "Microsoft.NET.Test.Sdk >= 15.0.0",
       "Microsoft.NETCore.App >= 1.1.2",
       "OpenCover >= 4.6.519",
+      "ReportGenerator >= 2.5.10",
       "WebAPI >= 1.0.0",
       "coveralls.net >= 0.7.0",
       "xunit >= 2.2.0",
@@ -10863,6 +10885,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "15.0.0"
+          },
+          "ReportGenerator": {
+            "target": "Package",
+            "version": "2.5.10"
           },
           "xunit.runner.console": {
             "target": "Package",
