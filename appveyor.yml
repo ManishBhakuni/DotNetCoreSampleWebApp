@@ -28,11 +28,14 @@ artifacts:
 clone_depth: 1
 test_script:  
 - ps: >-
+    $ENV:APPVEYOR_BUILD_FOLDER;
+    $ENV:USERPROFILE;
     $resultsFile = $ENV:APPVEYOR_BUILD_FOLDER + '\results.xml';  
-    $openCoverConsole = $ENV:USERPROFILE + '\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe';
+    $openCoverConsole = $ENV:APPVEYOR_BUILD_FOLDER + '\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe';
     $target = '-target:C:\Program Files\dotnet\dotnet.exe';
     $targetArgs = '-targetargs: test ' + $ENV:APPVEYOR_BUILD_FOLDER + '\WebAPITests -c ' + $ENV:CONFIGURATION;
-    $filter = '-filter:+[WebAPI*]*' $openCoverConsole $target $targetArgs '-register:user' $filter '-oldStyle';       
+    $filter = '-filter:+[WebAPI*]*'; 
+    & $openCoverConsole $target $targetArgs '-register:user' $filter '-oldStyle';      
 on_finish:
   # any cleanup in here
 deploy: off
