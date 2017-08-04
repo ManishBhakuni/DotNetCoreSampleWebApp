@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "665b4ae04ed15c64396a46679dd2735e1e2565d0"
+    "signature": "32aba2b257e574a9c24091c612bead5a25bf56ef"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,6 +13,7 @@
           "WebAPI": "1.0.0",
           "coveralls.net": "0.7.0",
           "xunit": "2.2.0",
+          "xunit.runner.console": "2.2.0",
           "xunit.runner.visualstudio": "2.2.0"
         },
         "runtime": {
@@ -1093,6 +1094,7 @@
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
         }
       },
+      "xunit.runner.console/2.2.0": {},
       "xunit.runner.visualstudio/2.2.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "1.1.2",
@@ -1832,6 +1834,13 @@
       "sha512": "sha512-4gjTrSUd/F6/pdsMsf+a1f1tcaUQnr59JvZQulmF8VwQbCh34ifie3iqriYyKyLmTQDUEJ/ZTPeZEDh0pxpTLA==",
       "path": "xunit.extensibility.execution/2.2.0",
       "hashPath": "xunit.extensibility.execution.2.2.0.nupkg.sha512"
+    },
+    "xunit.runner.console/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bz+N1MyQ24rtLJPR/cCdUAb4V8cM2Te7gTopDhsIkPSOqWk4GCO2QfJvr5Wwe0vbBXcpBOWCh2vH75fzhA3cig==",
+      "path": "xunit.runner.console/2.2.0",
+      "hashPath": "xunit.runner.console.2.2.0.nupkg.sha512"
     },
     "xunit.runner.visualstudio/2.2.0": {
       "type": "package",
