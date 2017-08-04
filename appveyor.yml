@@ -38,8 +38,7 @@ test_script:
     $target = '-target:C:\Program Files\dotnet\dotnet.exe'
     $targetArgs = '-targetargs: test ' + $ENV:APPVEYOR_BUILD_FOLDER + '\WebAPITests -c ' + $ENV:CONFIGURATION
     $filter = '-filter:+[WebAPI*]* -[WebAPI]*'
-    & $openCoverConsole $target $targetArgs '-register:user' $filter '-oldStyle'
-    $targetArgs = '-targetargs: test ' + $ENV:APPVEYOR_BUILD_FOLDER + '\WebAPITests -c ' + $ENV:CONFIGURATION  
+    & $openCoverConsole $target $targetArgs '-register:user' $filter '-oldStyle'   
 on_finish:
   # any cleanup in here
 deploy: off
