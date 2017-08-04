@@ -28,11 +28,8 @@ artifacts:
 clone_depth: 1
 test_script:  
 - ps: >-
-    $resultsFile = $ENV:APPVEYOR_BUILD_FOLDER + '\results.xml';  
-    $openCoverConsole = $ENV:USERPROFILE + '\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe';
-    $target = '-target:C:\Program Files\dotnet\dotnet.exe';
-    $targetArgs = '-targetargs: test ' + $ENV:APPVEYOR_BUILD_FOLDER + '\WebAPITests -c ' + $ENV:CONFIGURATION;
-    $filter = '-filter:+[WebAPI*]*' $openCoverConsole $target $targetArgs '-register:user' $filter '-oldStyle';       
+    \.nuget\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe –register:user -target:"C:\projects\$env:APPVEYOR_PROJECT_NAME\packages\xunit.runner.console.2.2.0\tools\xunit.console.exe" "-targetargs:WebAPITests\bin\$env:CONFIGURATION\:WebAPITests.dll –appveyor –noshadow"
+    -filter:”+[WebAPI*]*” –output:opencoverCoverage.xml      
 on_finish:
   # any cleanup in here
 deploy: off
