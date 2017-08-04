@@ -26,12 +26,7 @@ artifacts:
     name: Website
     type: WebDeployPackage
 clone_depth: 1
-test_script:
-  #restore packages for our unit tests
-  - cmd: dotnet restore ./WebAPITests/WebAPITests.csproj --verbosity m
-  # run the unit tests (requires changing into the test directory)
-  - cmd: cd WebAPITests
-  - cmd: dotnet test
+test_script:  
 - ps: >-
     $resultsFile = $ENV:APPVEYOR_BUILD_FOLDER + '\results.xml'  
     $openCoverConsole = $ENV:USERPROFILE + '\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe'
