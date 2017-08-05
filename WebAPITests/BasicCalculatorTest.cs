@@ -13,7 +13,7 @@ namespace WebAPITests
         [Fact]
         public void SumTest()
         {
-            Assert.Equal(12, objBasicCalculator.Sum(5, 7));           
+            Assert.Equal(12, objBasicCalculator.Sum(5, 12));           
         }
 
         [Fact]
