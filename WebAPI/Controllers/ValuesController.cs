@@ -14,6 +14,9 @@ namespace WebAPI.Controllers
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
+            return null;
+            return new string[] { "value1", "value2" };
+            int failedit
         }
 
         // GET api/values/5
