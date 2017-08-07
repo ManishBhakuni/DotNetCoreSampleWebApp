@@ -34,7 +34,7 @@ test_script:
     #nuget restore -PackagesDirectory .\packages;
     dotnet publish .\WebAPITests -o ..\build_tests --framework netcoreapp1.1;
     ls;   
-    .\packages\opencover\4.6.519\tools\OpenCover.Console.exe -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:"vstest WebAPITests.dll" -targetdir:"build_tests" -oldStyle -register:user -output:"_CodeCoverageResult.xml" -filter:"+[WebAPI]*";
+    .\packages\opencover\4.6.519\tools\OpenCover.Console.exe -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:"vstest WebAPITests.dll" -targetdir:"build_tests" -oldStyle -register:user -output:"_CodeCoverageResult.xml" -filter:"+[WebAPI*]* -[WebApiTests]*";
     .\packages\ReportGenerator\2.5.10\tools\ReportGenerator.exe "-reports:_CodeCoverageResult.xml" "-targetdir:_CodeCoverageReport";    
     .\packages\coveralls.net\0.7.0\tools\csmacnz.Coveralls.exe  --opencover -i .\_CodeCoverageResult.xml --useRelativePaths;
 on_finish:
