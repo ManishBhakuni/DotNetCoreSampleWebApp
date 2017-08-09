@@ -39,7 +39,7 @@ test_script:
     .\packages\coveralls.net\0.7.0\tools\csmacnz.Coveralls.exe  --opencover -i .\_CodeCoverageResult.xml --useRelativePaths;
 on_finish:
   # any cleanup in here
-deploy
+deploy:
   provider: WebDeploy
   server: dotnetcoresampelwebapp.scm.azurewebsites.net:443
   website: dotnetcoresampelwebapp
