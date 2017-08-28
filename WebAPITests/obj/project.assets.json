@@ -4113,12 +4113,6 @@
           "Microsoft.AspNetCore.Mvc": "1.1.3",
           "Microsoft.Extensions.Logging.Debug": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/netcoreapp1.1/WebAPI.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netcoreapp1.1/WebAPI.dll": {}
         }
       }
     }
@@ -10845,7 +10839,7 @@
     ]
   },
   "packageFolders": {
-    "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\packages": {}
+    "C:\\Users\\M Bhakuni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -10853,15 +10847,11 @@
       "projectUniqueName": "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\WebAPITests\\WebAPITests.csproj",
       "projectName": "WebAPITests",
       "projectPath": "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\WebAPITests\\WebAPITests.csproj",
-      "packagesPath": ".\\packages",
       "outputPath": "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\WebAPITests\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/WebAPITests.dll": "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\WebAPITests\\bin\\placeholder\\netcoreapp1.1\\WebAPITests.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -10875,9 +10865,18 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
+          "xunit.runner.visualstudio": {
+            "target": "Package",
+            "version": "2.2.0"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
+          },
+          "xunit": {
+            "target": "Package",
+            "version": "2.2.0"
           },
           "coveralls.net": {
             "target": "Package",
@@ -10887,25 +10886,17 @@
             "target": "Package",
             "version": "15.0.0"
           },
-          "OpenCover": {
-            "target": "Package",
-            "version": "4.6.519"
-          },
           "ReportGenerator": {
             "target": "Package",
             "version": "2.5.10"
-          },
-          "xunit": {
-            "target": "Package",
-            "version": "2.2.0"
           },
           "xunit.runner.console": {
             "target": "Package",
             "version": "2.2.0"
           },
-          "xunit.runner.visualstudio": {
+          "OpenCover": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "4.6.519"
           }
         }
       }
