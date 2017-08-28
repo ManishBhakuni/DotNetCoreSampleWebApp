@@ -44,6 +44,6 @@ deploy:
   server: https://dotnetcoresampelwebapp.scm.azurewebsites.net:443/msdeploy.axd?site=dotnetcoresampelwebapp
   website: dotnetcoresampelwebapp
   username: manishb123456
-  password: p@ssw04dp@ssw04d
+  password: manishb123456
   NTLM: disabled
   
