@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "D:\\Unity\\POC\\GitHubProjects\\DotNetCoreSampleWebApp\\packages"
+      "C:\\Users\\M Bhakuni\\.nuget\\packages"
     ]
   }
 }
