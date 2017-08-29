@@ -45,5 +45,6 @@ deploy:
   website: dotnetcoresampelwebapp
   username: manishb123456
   password: manishb123456
+  app_offline: true
   NTLM: disabled
   
