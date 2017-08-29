@@ -7,3 +7,4 @@ D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\ConsoleApp\obj\Debug\netcorea
 D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\ConsoleApp\bin\Debug\netcoreapp1.1\ConsoleApp.pdb
 D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\ConsoleApp\obj\Debug\netcoreapp1.1\ConsoleApp.dll
 D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\ConsoleApp\obj\Debug\netcoreapp1.1\ConsoleApp.pdb
+D:\Unity\POC\GitHubProjects\DotNetCoreSampleWebApp\ConsoleApp\bin\Debug\netcoreapp1.1\appsettings.json
