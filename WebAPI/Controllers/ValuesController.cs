@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            Thread.Sleep(10 * 1000);
+            Thread.Sleep(60 * 1000);
             
             string value1 = config.TokenEndPoint;   
             return new string[] { value1, "value2 updated with status check" };                      
