@@ -27,8 +27,10 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+
             string value1 = config.TokenEndPoint;   
             return new string[] { value1, "value2 updated with status check" };                      
+
         }
 
         // GET api/values/5
