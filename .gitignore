@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/build_tests
+/packages
+/_CodeCoverageReport
+/_CodeCoverageReport
+/_CodeCoverageReport
+/_CodeCoverageResult.xml
+/_CodeCoverageResult.xml

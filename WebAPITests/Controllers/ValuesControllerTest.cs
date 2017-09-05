@@ -23,9 +23,9 @@ namespace WebAPITests.Controllers
             //Assert.AreEqual("value1", result.ElementAt(0));
             //Assert.AreEqual("value2", result.ElementAt(1));
 
-            // Assert
+            // Assert            
 
-            ValuesController objValuesController = new ValuesController();
+            //ValuesController objValuesController = new ValuesController();
             
 
             Assert.Equal(10, 10);
